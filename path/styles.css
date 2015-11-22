@@ -4,13 +4,12 @@
 	margin: 0px;
 }
 body {
-	margin: 0px;
+	
 }
 
 body {
-  background-color: #99E0F8;
-    background-image: linear-gradient(rgb(170,227,246) 50%, transparent 50%);
-    background-size: 50px 50px;  
+	margin: 0px;
+  	background-color: #99E0F8;  
 }
 .animals-container {
   position: absolute;
