@@ -35,7 +35,7 @@ body {
   position: relative;
   /*border: 1px solid blue;*/
   margin-bottom: 20px;
-  height: 90px;
+  height: 100px;
   border-radius: 45px 5px 5px 45px;
   background: #EFE176;
   vertical-align: middle;
@@ -44,32 +44,33 @@ body {
 .animals-photo {
   float: left;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  background: url(https://pp.vk.me/c629104/v629104970/1cd87/4yLxszbpyFs.jpg) -15px;
-  background-size: cover;
+  width: 100px;
+  height: 100px;
   box-shadow: 2px 0px 2px rgba(0,0,0,0.3);
   -webkit-box-shadow: 2px 0px 2px rgba(0,0,0,0.3);
   -moz-box-shadow: 2px 0px 2px rgba(0,0,0,0.3);
 }
 .animals-description {
   position: relative;
-  top:25%;
+  top:0;
   padding: 5px;
   /*border: 1px solid yellow;*/
-  width: 200px;
+  width: 250px;
   margin: auto;
   float: left;
 }
 .slide {
 	background-color: #B7F3B8;
-    background-image: linear-gradient(rgb(172,241,174) 50%, transparent 50%);
+    background-image: linear-gradient(rgb(172,241,174) 50%, transparent 50%),
+    				  linear-gradient(90deg, rgb(172,241,174) 50%, transparent 50%);
     background-size: 50px 50px;
-    min-height: 600px;
+    height: 100vh;
+    min-height: 550px;
     position: relative;
     margin: -22px 0px;
 }
 .slide.green {
+	margin-top: 0;
 	background-color: #B7F3B8;
     background-image: linear-gradient(rgb(172,241,174) 50%, transparent 50%);
     background-size: 50px 50px;
@@ -107,7 +108,7 @@ body {
 	float: left;
 	color: #fff;
 	text-decoration: none;
-	font: normal 22px sans-serif;
+	font: normal 22px verdana;
 	padding-top: 12px;
 }
 .menu { 
@@ -316,8 +317,13 @@ body {
 	line-height: 30px;
 }
 .feedback {
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	background: #ACF1AE;
-	min-height: 500px;
+	height: 500px;
 	width: 400px;
 	border-radius: 5px;
 	margin: auto;
