@@ -1,0 +1,116 @@
+body{
+	position: relative;
+}
+.firs {
+	margin-top: 70px;
+}
+.num {
+	height: 100vh;
+}
+.num.one {
+	background: url(../images/mainslide_background.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.num.two {
+	-webkit-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-moz-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-ms-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-o-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+
+	background-color: #99E0F8;
+	background-size: 70px 70px;
+}
+.num.three {
+		-webkit-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-moz-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-ms-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-o-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+
+	background-color: #BAB6E2;
+	background-size: 70px 70px;
+}
+.num.four {
+		-webkit-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-moz-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-ms-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-o-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+
+	background-color: #F4D86D;
+	background-size: 70px 70px;
+}
+.num-two-row div {
+	background: yellow;
+	height: 100px;
+}
+.parallax-window {
+	min-height: 70vh;
+	margin: 0px;
+}
+
+.myform {
+	margin: 0 auto;
+	background: #1DB4F7;
+	border: 4px solid #9AD8F4;
+	border-radius: 10px;
+	width: 400px;
+	padding: 20px;
+	height: 270px;
+	margin-bottom: 70px;
+}
+.myform input {
+	margin-bottom: 20px;
+}
+.img-bird {
+	width: 160px;
+	height: 180px;
+	background-image: url(../images/sova.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	bottom: 100px;
+	right: -210px;
+}
+.formsubmit {
+	position: relative;
+	bottom: 190px;
+	right: -70px;
+	background: #1DB4F7;
+	border: 4px solid #9AD8F4;
+}
+
+.button-row {
+	margin-top: 40px;
+	height: 140px;
+}
+
+.arrow_box {
+	position: relative;
+	background: #2D3E50;
+	height: 100px;
+/*	border: 2px solid #c2e1f5;*/
+	padding: 10px;
+	color: #fff;
+	border-radius: 6px 0 6px 6px;
+	text-align: center;
+}
+.arrow_box h3 {
+	margin-top: 12px;
+}
+.arrow_box:before {
+	left: 100%;
+	top: 19px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #2D3E50;
+	border-width: 18px;
+	margin-top: -18px;
+}

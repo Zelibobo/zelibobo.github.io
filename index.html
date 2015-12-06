@@ -1,123 +1,191 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title>Зоопарк "Мадагаскар"</title>
-	<link rel="stylesheet" href="path/styles.css" type="text/css"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="path/parallax.js"></script>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html lang="ru">
 
-		ga('create', 'UA-70922539-1', 'auto');
-		ga('send', 'pageview');
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Мадагаскар</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<!-- Unslider -->
+	<link rel="stylesheet" href="css/unslider.css">
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-70922539-1', 'auto');
+	ga('send', 'pageview');
+
 	</script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-<div class="header">
-	<div class="header-logo"><a href="#">Мадагаскар</a></div>
-	<ul class="menu">
-		<li><a href="#">Новости</a></li>
-		<li><a href="#">Животные</a></li>
-		<li><a href="#">Услуги</a></li>
-		<li><a href="#">Обратная связь</a></li>
-	</ul>
-</div>
-<div class="slide green">	
-	<div class="container main">
-	<div class="future-slider">
-		
-	</div>
-	</div>
-	<div class="btn_box">
-		<div class="arrow_box"><span>Нажми сюда и купи билеты в наш зоопарк</span></div>
-		<div class="btn_box_in"><a href="#" class="button">Купить билеты</a></div>
-	</div>
-</div>
-<div class="parallax-window" data-parallax="scroll" data-image-src="images/bg2.jpg" naturalHeight="315"></div>
-<div class="slide blue"> 
-	<!--<div class="container">-->
-		<div class="animals-container">
-			<div class="animals-column">
-		        <div class="animal-item">
-						  <div class="animals-photo" style="background: url(images/an1.JPG) -15px;
-  															background-size: cover;"></div>
-						  <div class="animals-description">
-						  	<span>Хорек Игорь очень любит посетителей зоопарка. Показывает разные трюки, чтобы привлечь к себе внимание.</span>
-						  </div>
-		        </div>   
-		        <div class="animal-item">
-						  <div class="animals-photo" style="background: url(images/an2.jpg) -40px;
-  															background-size: cover;"></div>
-						  <div class="animals-description">
-						  	<span>Слонёнок Джумбо весёлый и любопытный. Очень любит купаться в своем маленьком прудике и лакомиться свежими фруктами.</span>
-						  </div>
-		        </div> 
-		        <div class="animal-item">
-						  <div class="animals-photo" style="background: url(images/an3.jpg) -30px;
-  															background-size: cover;"></div>
-						  <div class="animals-description">
-						  	<span>Медведь Соня очень ленивый, любит поспать. Соня обожает сёмгу. Сразу просыпается, когда почует её запах.</span>
-						  </div>
-		        </div> 
-		        <div class="animal-item">
-						  <div class="animals-photo" style="background: url(images/an4.jpg) -15px;
-  															background-size: cover;"></div>
-						  <div class="animals-description">
-						  	<span>Верблюд Вася очень ручной. Его можно покормить травой, сеном и овощами. Но его лучше не злить, Вася может и плюнуть в вас.</span>
-						  </div>
-		        </div> 
+
+<body data-spy="scroll" data-target="#responsive-menu" data-offset="100">
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsive-menu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#main"><img src="images/brandimage.png" height="28px" alt=""></a>
 			</div>
-			<div class="animals-column">
-		        <div class="animal-item">
-						  <div class="animals-photo" style="background: url(images/an5.jpg) -30px;
-  															background-size: cover;"></div>
-		          <div class="animals-description">
-		          	<span>Обезьянка Бананчик просто обожает бананы. Именно поэтому ему дали такое имя. Он даже ворует бананы у других обезьян.</span>
-		          </div>
-		        </div>   
-		    <div class="animal-item">
-						  <div class="animals-photo" style="background: url(images/an6.jpg) -25px;
-  															background-size: cover;"></div>
-						  <div class="animals-description">
-						  	<span>Пара Тедди и Тодди. Они сформировали свою маленькую семью. Воспитывают своего маленького слонёнка Джумбо.</span>
-						  </div>
-		        </div> 
-		    <div class="animal-item">
-						  <div class="animals-photo" style="background: url(images/an7.jpg) -35px;
-  															background-size: cover;"></div>
-						  <div class="animals-description">
-						  	<span>Белый мишка Арчик. Он очень любит показывать свои водные представления. Плавает, кувыркается, играет с игрушками и обвораживает посетителей.</span>
-						  </div>
-		        </div> 
-		        <div class="animal-item">
-						  <div class="animals-photo" style="background: url(images/an8.jpg);
-  															background-size: cover;"></div>
-						  <div class="animals-description">
-						  	<span>Попугай Жорик поражает всех своей окраской. У него очень красивые разноцветные крылья, когда он перелетает с ветки на ветку, просто захватывае дух.</span>
-						  </div>
-		        </div> 
-					</div>
-				</div>
- 
-	<!--</div>-->
-</div>
-<div class="parallax-window" data-parallax="scroll" data-image-src="images/bg3.jpg" naturalHeight="315"></div>
-<div class="slide violet"> 
-</div>
-<div class="parallax-window" data-parallax="scroll" data-image-src="images/bg4.jpg" naturalHeight="315"></div>
-<div class="slide yellow"> 
-	<div class="feedback">
-		<h1>Свяжитесь с нами!</h1>
-		<form>
-			<input type="text" class="textbox" placeholder="ФИО"/>
-			<input type="text" class="textbox" placeholder="Email"/>
-			<input type="submit"class="button" val/>
-		</form>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse collapse-in" aria-expanded="true" id="responsive-menu">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#animals">Животные</a></li>
+					<li><a href="#service">Услуги</a></li>
+					<li><a href="#contact">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title" id="myModalLabel">Оплата билетов</h4>
+		  </div>
+		  <div class="modal-body">
+		  	<form action="" role="form">
+		  		<div class="myform">
+		  			<div class="form-group">
+		  				<input type="email" id="email" class="form-control" placeholder="Email"></input>
+						<input type="number" id="number" class="form-control" placeholder="Номер карты"></input>
+						<input type="text" id="name" class="form-control" placeholder="Имя владельца"></input>
+						<div class="row">
+							<div class="col-xs-4">
+								<input type="text" id="date" class="form-control" placeholder="Дата"></input>
+							</div>
+							<div class="col-xs-4">
+								<input type="number" id="cvv" class="form-control" placeholder="CVV"></input>
+							</div>
+						</div>
+		  			</div>
+		  			<div class="img-bird"></div>
+		  			<button type="submit" class="btn btn-primary formsubmit">Оплатить</button>
+		  		</div>
+		  	</form>
+		  </div>
+		</div>
+	  </div>
 	</div>
-</div>
-<div class="footer"><a href="#">Войти</a> </div>
+
+	<!-- Content 1 -->
+	<div class="container-fluid num one" id="main">
+		<div class="row firs">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div id="carousel" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+						<li data-target="#carousel" data-slide-to="2"></li>
+						<li data-target="#carousel" data-slide-to="3"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/slide1.jpg" alt="">
+							<div class="carousel-caption">
+								<h3>Первый слайд</h3>
+								<p>Описание</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/slide2.jpg" alt="">
+							<div class="carousel-caption">
+								<h3>Второй слайд</h3>
+								<p>Описание</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/slide3.jpg" alt="">
+							<div class="carousel-caption">
+								<h3>Третий слайд</h3>
+								<p>Описание</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/slide4.jpg" alt="">
+							<div class="carousel-caption">
+								<h3>Четвертый слайд</h3>
+								<p>Описание</p>
+							</div>
+						</div>
+					</div>
+
+					<a href="#carousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+					<a href="#carousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>
+			</div> <!-- Slider Column-->
+		</div>
+		<div class="row button-row">
+			<div class="col-lg-3 button-col col-lg-offset-3 col-xs-6">
+				<div class="arrow_box">
+					<h3>Нажми сюда и купи билеты онлайн</h3>
+				</div>
+			</div>
+			<div class="col-lg-2 col-xs-6 pay-button-col">
+				<button class="btn btn-primary btn-lg modalbutton" data-toggle="modal" data-target="#myModal">Купить билеты</button>
+			</div>
+		</div>
+	</div>
+	<!-- Parallax -->
+	<div class="parallax-window" data-parallax="scroll" data-image-src="images/bg2.jpg" naturalHeight="315"></div>
+
+	<!-- Content 2 -->
+	<div class="container-fluid num two" id="animals" >
+		<div class="row num-two-row">
+
+		</div>
+	</div>
+	<!-- Parallax -->
+	<div class="parallax-window" data-parallax="scroll" data-image-src="images/bg3.jpg" naturalHeight="315"></div>
+
+	<!-- Content 3 -->
+	<div class="container-fluid num three" id="service">
+
+	</div>
+	<!-- Parallax -->
+	<div class="parallax-window" data-parallax="scroll" data-image-src="images/bg4.jpg" naturalHeight="315"></div>
+
+	<!-- Content 4 -->
+	<div class="container-fluid num four" id="contact">
+
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.js"></script>
+	<!-- Parallax -->
+	<script src="js/parallax.js"></script>
+	<script>
+		$('document').ready(function(){$('#modal').modal("false");});
+	</script>
 </body>
+
 </html>
