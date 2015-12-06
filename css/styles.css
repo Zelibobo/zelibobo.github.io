@@ -87,8 +87,9 @@ body{
 	height: 140px;
 }
 .modalbutton {
-	margin: 25px 0;
+	margin: 25px auto;
 }
+.pay-button-col {}
 .arrow_box {
 	position: relative;
 	background: #2D3E50;
@@ -115,4 +116,5 @@ body{
 	border-left-color: #2D3E50;
 	border-width: 18px;
 	margin-top: -18px;
+	overflow: hidden;
 }
