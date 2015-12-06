@@ -5,7 +5,7 @@ body{
 	margin-top: 70px;
 }
 .num {
-	height: 100vh;
+	min-height: 50vh;
 }
 .num.one {
 	background: url(../images/mainslide_background.jpg);
