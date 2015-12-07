@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>Мадагаскар</title>
 
@@ -14,7 +15,7 @@
 	<!-- Unslider -->
 	<link rel="stylesheet" href="css/unslider.css">
 	<!-- Google Analytics -->
-	 <script>
+	<script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
 			i[r] = i[r] || function () {
@@ -52,7 +53,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#main"><img src="images/brandimage.png" height="28px" alt=""></a>
+				<a class="navbar-brand" href="#main"><img src="images/logo.png" height="28px" alt=""></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,22 +77,23 @@
 					<h4 class="modal-title" id="myModalLabel">Оплата билетов</h4>
 				</div>
 				<div class="modal-body">
-					<form action="" role="form">
+					<form action="//formspree.io/landing1zoo@gmail.com" method="POST" role="form">
 						<div class="myform">
 							<div class="form-group">
-								<input type="email" id="email" class="form-control" placeholder="Email"></input>
-								<input type="number" id="number" class="form-control" placeholder="Номер карты"></input>
-								<input type="text" id="name" class="form-control" placeholder="Имя владельца"></input>
+								<input type="email" id="email" class="form-control" name="_replyto" placeholder="Email"></input>
+								<input type="number" id="number" class="form-control" name="number_card" placeholder="Номер карты"></input>
+								<input type="text" id="name" class="form-control" name="name_pok" placeholder="Имя владельца"></input>
 								<div class="row">
 									<div class="col-xs-4">
-										<input type="text" id="date" class="form-control" placeholder="Дата"></input>
+										<input type="text" id="date" class="form-control" name="date_card" placeholder="Дата"></input>
 									</div>
 									<div class="col-xs-4">
-										<input type="number" id="cvv" class="form-control" placeholder="CVV"></input>
+										<input type="number" id="cvv" class="form-control" name="cvv_card" placeholder="CVV"></input>
 									</div>
 								</div>
 							</div>
 							<div class="img-bird"></div>
+							<input type="hidden" name="_next" value="//zelibobo.github.io/thankyou" />
 							<button type="submit" class="btn btn-primary formsubmit">Оплатить</button>
 						</div>
 					</form>
@@ -117,28 +119,24 @@
 							<img src="images/slide1.jpg" alt="">
 							<div class="carousel-caption">
 								<h3>Первый слайд</h3>
-								<p>Описание</p>
 							</div>
 						</div>
 						<div class="item">
 							<img src="images/slide2.jpg" alt="">
 							<div class="carousel-caption">
 								<h3>Второй слайд</h3>
-								<p>Описание</p>
 							</div>
 						</div>
 						<div class="item">
 							<img src="images/slide3.jpg" alt="">
 							<div class="carousel-caption">
 								<h3>Третий слайд</h3>
-								<p>Описание</p>
 							</div>
 						</div>
 						<div class="item">
 							<img src="images/slide4.jpg" alt="">
 							<div class="carousel-caption">
 								<h3>Четвертый слайд</h3>
-								<p>Описание</p>
 							</div>
 						</div>
 					</div>
@@ -181,9 +179,32 @@
 
 	<!-- Content 4 -->
 	<div class="container-fluid num four" id="contact">
-
+		<div class="row">
+			<div class="col-md-7"></div>
+			<div class="col-md-4">
+				<form action="//formspree.io/landing1zoo@gmail.com" method="POST" role="form">
+					<div class="myform myfeedback-form">
+						<div class="form-group">
+							<h3>Свяжитесь с нами если у вас возникли какие-либо вопросы.</h3>
+							<input type="email" id="email" name="email" class="form-control" placeholder="Email"></input>
+							<input type="text" id="fio" name="fio" class="form-control" placeholder="ФИО"></input>
+							<textarea id="text" name="massage" class="form-control mytextarea" placeholder="Ваше сообщение..." rows="6"></textarea>
+							<button type="submit" class="btn btn-primary">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
-
+	
+	<!-- Footer -->
+	<footer>
+		<div class="row footer-row">
+			
+		</div>
+	</footer>
+	
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->

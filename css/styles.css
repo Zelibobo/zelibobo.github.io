@@ -2,10 +2,11 @@ body{
 	position: relative;
 }
 .firs {
-	margin-top: 70px;
+	margin-top: 20px;
 }
 .num {
 	min-height: 50vh;
+	padding: 50px;
 }
 .num.one {
 	background: url(../images/mainslide_background.jpg);
@@ -63,6 +64,21 @@ body{
 }
 .myform input {
 	margin-bottom: 20px;
+}
+.mytextarea {
+	margin-bottom: 20px;
+	resize: none;
+}
+.myfeedback-form {
+	width: auto;
+	height: auto;
+	min-height: 400px;
+	background: #ACF1AE;
+}
+.myfeedback-form h3 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: #555;
 }
 .img-bird {
 	width: 160px;
