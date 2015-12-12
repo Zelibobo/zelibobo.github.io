@@ -130,14 +130,14 @@ body {
 
 .service-arrow-box {
 	position: relative;
-	padding: 10px;
+	padding: 20px 10px;
 	text-align: center;
 	border-radius: 8px;
 	color: #DDF8C6;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	font: 14pt bold italic;
 	font-size: 16pt;
-	height: 160px;
+	min-height: 50px;
 	margin: 260px auto 20px auto;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 	display: table;
