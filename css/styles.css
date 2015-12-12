@@ -17,12 +17,31 @@ body {
 
 .num.one {
 	background: url(../images/mainslide_background.jpg);
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 
+.navbar-brand {
+	font-family: 'Hermes', arial;
+}
+
+.slider-button {
+	margin: 15px;
+	background: none;
+	border: 2px solid #fff;
+	width: 160px;
+	height: 45px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.slider-button:hover {
+	background: #388CE2;
+	border: 2px solid #388CE2;
+	color: #fff;
+}
+
 .num.two {
-	-webkit-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-webkit-background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-moz-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-ms-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-o-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
@@ -32,7 +51,7 @@ body {
 }
 
 .num.three {
-	-webkit-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-webkit-background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-moz-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-ms-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-o-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
@@ -42,7 +61,7 @@ body {
 }
 
 .num.four {
-	-webkit-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+	-webkit-background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-moz-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-ms-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	-o-background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
@@ -59,7 +78,9 @@ body {
 .animal-row {
 	margin-top: 15px;
 }
-
+.animal-post {
+	/*padding: 40px;*/
+}
 .num.three img {
 	width: 200px;
 	height: 200px;
@@ -69,23 +90,30 @@ body {
 	right: 0;
 	bottom: 0;
 	margin: 25px auto 0px auto;
-	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
 }
 
 .num.three h2 {
 	text-align: center;
 	color: azure;
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.num-two-row h2 {
+	text-align: center;
+	margin-bottom: 50px;
+	color: azure;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
 }
 
 .num-two-row .thumbnail p {
-	font-weight: 14pt;
+	font-size: 12pt;
 }
 
 .num-two-row .thumbnail {
 	height: 395px;
+	box-shadow:  2px 2px 2px rgba(0,0,0,0.3);
 }
 
 .animal-row {
@@ -108,10 +136,16 @@ body {
 	color: #DDF8C6;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	font: 14pt bold italic;
-	width: 330px;
+	font-size: 16pt;
+	height: 160px;
 	margin: 260px auto 20px auto;
-	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	display: table;
+}
+.service-arrow-box p {
+	display: table-cell;
+	height: 120px;
+	vertical-align: middle;
 }
 
 .service-arrow-box:after,
@@ -212,6 +246,7 @@ body {
 	min-height: 400px;
 	background: #ACF1AE;
 	max-width: 400px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 
 .myfeedback-form h3 {
@@ -228,7 +263,6 @@ body {
 	width: 160px;
 	height: 180px;
 	background-image: url(../images/sova.png);
-	-webkit-background-size: cover;
 	background-size: cover;
 	position: relative;
 	bottom: 100px;
@@ -285,13 +319,22 @@ body {
 	overflow: hidden;
 }
 
+@media screen and (min-width: 555px) and (max-width: 768px) {
+	.service-arrow-box {
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+}
+
 .contacts-col {
 	margin-bottom: 25px;
 }
 
+
 .contacts-col img {
 	margin-left: auto;
 	margin-right: auto;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 
 .futer-row {
@@ -302,11 +345,16 @@ body {
 
 .fut-col {
 	color: #666;
-	padding: 15px;
+	padding: 10px;
 }
 
 .fut-col h4 {
 	margin-top: 10px;
+}
+
+.social-container {
+	width: 185px;
+	margin: 0 auto;
 }
 
 .social-icon {
