@@ -24,10 +24,15 @@ body {
 	font-family: 'Hermes', arial;
 }
 
+.mymodal {
+	background: rgba(0,0,0,0);
+	border: 0;
+	box-shadow: none;
+}
+
 .slider-button {
 	margin: 15px;
-	background: none;
-	border: 2px solid #fff;
+	background: #EF5E4A;
 	width: 160px;
 	height: 45px;
 	font-size: 18px;
@@ -35,8 +40,7 @@ body {
 }
 
 .slider-button:hover {
-	background: #388CE2;
-	border: 2px solid #388CE2;
+	background: #CF3E2A;
 	color: #fff;
 }
 
