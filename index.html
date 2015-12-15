@@ -10,13 +10,14 @@
 	<title>Мадагаскар</title>
 
 	<!-- Bootstrap -->
+	<link href="css/scrolling-nav.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	<!-- Fonts -->
 	<link href="http://allfont.ru/allfont.css?fonts=hermes" rel="stylesheet" type="text/css" />
 	<!-- Google Analytics -->
 
-	<script>
+	<!-- <script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
 			i[r] = i[r] || function () {
@@ -31,7 +32,7 @@
 	
 		ga('create', 'UA-70922539-1', 'auto');
 		ga('send', 'pageview');
-	</script>
+	</script> -->
 
 
 
@@ -56,15 +57,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#main">Мадагаскар</a>
+				<a class="navbar-brand page-scroll" href="#main">Мадагаскар</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse collapse-in" aria-expanded="true" id="responsive-menu">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#animals">Животные</a></li>
-					<li><a href="#service">Услуги</a></li>
-					<li><a href="#contact">Контакты</a></li>
+					<li><a class="page-scroll" href="#animals">Животные</a></li>
+					<li><a class="page-scroll" href="#service">Услуги</a></li>
+					<li><a class="page-scroll" href="#contact">Контакты</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -86,7 +87,7 @@
 						<div class="myform">
 							<div class="form-group">
 								<input type="email" id="email" class="form-control" name="_replyto" required placeholder="Email"/>
-								<input type="text" id="number" class="form-control" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" maxlength="19" required name="number_card" placeholder="XXXX XXXX XXXX XXXX"/>
+								<input type="text" id="number" class="form-control" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" maxlength="19" required name="number_card" placeholder="0000 0000 0000 0000"/>
 								<input type="text" id="name" class="form-control" name="name_pok" pattern="^[A-Z]{25}+$" required placeholder="IVANOV IVAN"/>
 								<div class="row">
 									<div class="col-xs-4">
@@ -119,28 +120,35 @@
 				<li data-target="#carousel" data-slide-to="3"></li>
 			</ol>
 			<div class="carousel-inner">
-				<div class="item active main-slide">
-					<img src="images/slide_1.jpg" alt="">
+				<div class="item active ">
+					<div class="parallax-window main-slide" data-parallax="scroll" data-image-src="images/main-slide.jpg">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<h1>Добро пожаловать в Мадагаскар</h1>
+							</div>
+						</div>
+					</div>
 					<div class="carousel-caption">
+						<h2>Вы можете купить билеты нажав на кнопку ниже</h2>
 						<button class="btn slider-button" data-toggle="modal" data-target="#myModal">Купить билеты</button>
 					</div>
 				</div>
 				<div class="item">
 					<img src="images/slide_2.jpg" alt="">
 					<div class="carousel-caption">
-						<h3>Второй слайд</h3>
+						<button class="btn slider-button" data-toggle="modal" data-target="#myModal">Купить билеты</button>
 					</div>
 				</div>
 				<div class="item">
 					<img src="images/slide_3.jpg" alt="">
 					<div class="carousel-caption">
-						<h3>Третий слайд</h3>
+						<button class="btn slider-button" data-toggle="modal" data-target="#myModal">Купить билеты</button>
 					</div>
 				</div>
 				<div class="item">
 					<img src="images/slide_4.jpg" alt="">
 					<div class="carousel-caption">
-						<h3>Четвертый слайд</h3>
+						<button class="btn slider-button" data-toggle="modal" data-target="#myModal">Купить билеты</button>
 					</div>
 				</div>
 			</div>
@@ -282,7 +290,7 @@
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
 						<div class="service-arrow-box red">
-							<p>Устройте настоящий праздник своим детям. Каждые выходные мы проводим развлекательное шоу с аниматорами на территории зоопарка. </p>
+							<p>Устройте настоящий праздник своим детям. Каждые выходные мы проводим развлекательное шоу с аниматорами на территории зоопарка. </p>							
 						</div>
 					</div>
 				</div>
@@ -348,8 +356,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.js"></script>
+	
 	<!-- Parallax -->
 	<script src="js/parallax.js"></script>
+	
+	<!-- Smooth Scroll -->	
+	<script src="js/scrolling-nav.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	
 	<script>
 		$('document').ready(function () {
 			$('#modal').modal("false");
@@ -363,6 +377,14 @@
 				};
 			});
 			$("div.service-arrow-box").height(maxH);
+			maxH = 0;
+			$("div.thumbnail").each(function () {
+				var h_block = parseInt($(this).height());
+				if (h_block > maxH) {
+					maxH = h_block;
+				};
+			});
+			$("div.thumbnail").height(maxH);
 		});
 	</script>
 </body>
