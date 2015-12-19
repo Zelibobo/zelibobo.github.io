@@ -359,7 +359,7 @@
 			var maxH = 0;		
 			elements.css('height', '');
 			elements.each(function () {
-				var h_block = parseInt($(this).height());
+				var h_block = $(this).height();
 				if (h_block > maxH) {
 					maxH = h_block;
 				};
