@@ -3,18 +3,52 @@
  	src: url(../fonts/hermes.ttf);
  }
  
+@media screen and (max-width: 768px) {
+	.thumbnail {
+		height: auto;
+	}
+}
+
  body {
  	position: relative;
 }
 
-.main-slide {	
-	background-image: -webkit-linear-gradient(bottom, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7));	
+brand:focus {
+    color: #9d9d9d;
 }
+
+.nav > li:focus {
+    color: #9d9d9d;
+}
+nav > li > a:focus {
+    color: #9d9d9d;
+}
+
+.main-slide::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(46, 49, 65, 0.7);
+}
+
+/*
+.main-slide {	
+
+	background-image: -webkit-linear-gradient(bottom, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7));	
+	background-image: -moz-linear-gradient(bottom, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7));
+	background-image: linear-gradient(bottom, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7));
+	background-image: rgba(46, 49, 65, 0.7);
+}
+*/
 
 .main-slide h1 {
 	color: #fff;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-	margin: 0px auto 120px auto;
+	margin: 0px auto;
 }
 
 .main-slide h3 {
@@ -22,20 +56,35 @@
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
 
+.slider-buy-btn {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+}
+
 .img-item {
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 90vh;
+	background-position: center top;
+	height: 100vh;
 	text-align: center;
 }
 
 #main {
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
-	margin-top: 50px;
 }
  
 .carousel-caption {
-	height: 60%;
+	height: 65%;
+}
+
+.cap-cont {
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
  .num {
@@ -56,7 +105,7 @@
  }
  
  .buy-button {
- 	margin: 15px;
+ 	margin: 15px auto;
  	background: #EF5E4A;
  	width: 160px;
  	height: 45px;
