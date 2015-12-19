@@ -367,17 +367,12 @@
 			elements.height(maxH);		
 		}
 		$('document').ready(function () { $('#modal').modal("false"); });		
-		var arrowboxs;
-		var thumbnails;
-		$('document').ready(function() {
-			arrowboxs = $("div.service-arrow-box");
-			thumbnails = $("div.thumbnail");
+		var arrowboxs = $("div.service-arrow-box");
+		$('document').ready(function() {	
 			resizeElements(arrowboxs);
-			resizeElements(thumbnails);
 		});
 		$(window).resize(function() {
 			resizeElements(arrowboxs);
-			resizeElements(thumbnails);
 		});
 		
 	</script>
