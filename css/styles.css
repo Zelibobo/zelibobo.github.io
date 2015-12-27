@@ -152,6 +152,7 @@ nav > li > a:focus {
  	background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
  	background-color: #F4D86D;
  	background-size: 70px 70px;
+	z-index: 0;
  }
  
  .num.four h2 {
@@ -522,3 +523,16 @@ nav > li > a:focus {
  .vk {
  	background-position: -59px -59px;
  }
+.four {
+	overflow: hidden;
+	position: relative;
+}
+.cat {
+	width: 160px;
+	position: absolute;
+	bottom: -118px;
+	transition: 1.5s;
+}
+.cat:hover {
+	bottom: -30px;
+}
