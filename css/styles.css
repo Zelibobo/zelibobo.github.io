@@ -46,7 +46,7 @@ nav > li > a:focus {
 */
 
 .main-slide h1 {
-	color: #fff;
+	color: #ffffff;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 	margin: 0px auto;
 }
@@ -88,7 +88,7 @@ nav > li > a:focus {
 }
 
  .num {
- 	min-height: 50vh;
+ 	min-height: 30vh;
  	padding: 50px;
 	box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
  }
@@ -355,14 +355,24 @@ nav > li > a:focus {
  	border-radius: 10px;
  	width: 400px;
  	padding: 20px;
- 	height: 270px;
+ 	height: 295px;
  	margin-bottom: 70px;
  }
  
  .myform input {
  	margin-bottom: 20px;
  }
+
+.myform .dandcv {
+	margin-bottom: 0px;
+}
  
+.myform h4 {
+	margin: 0;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
  .mytextarea {
  	margin-bottom: 20px;
  	resize: none;
@@ -393,13 +403,13 @@ nav > li > a:focus {
  	background-image: url(../images/sova.png);
  	background-size: cover;
  	position: relative;
- 	bottom: 100px;
- 	right: -210px;
+ 	bottom: 110px;
+ 	right: -215px;
  }
  
  .formsubmit {
  	position: relative;
- 	bottom: 188px;
+ 	bottom: 183px;
  	right: -28px;
  	width: 95px;
  	background: #1DB4F7;
@@ -408,7 +418,7 @@ nav > li > a:focus {
  
  .formclose {
  	position: relative;
- 	bottom: 188px;
+ 	bottom: 183px;
  	width: 95px;
  	background: #1DB4F7;
  	border: 4px solid #9AD8F4;
@@ -464,7 +474,7 @@ nav > li > a:focus {
  }*/
  
  .contacts-col {
- 	margin-bottom: 25px;
+ 	margin-bottom: 5px;
  }
  
  .contacts-col img {
